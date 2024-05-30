@@ -7,7 +7,7 @@ public class Pattern_21 {
         int star = 1;
         int sp = n-1;
         int sp2 = -1;
-        while(row <= 2*n-1) {
+        while(row <= n) {
             // Space
             int i = 1;
             while(i <= sp) {
@@ -24,12 +24,12 @@ public class Pattern_21 {
                 k++;
             }
             // Star
-            if(row > 1 && row < 2*n-1){
+            if(row > 1 && row < n){
                 System.out.print("* ");
             }
             
             // Next Row
-            if(row < n) {
+            if(row <= n/2) {
                 sp--;
                 sp2 += 2;
             } else {
