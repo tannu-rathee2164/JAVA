@@ -2,6 +2,7 @@ import java.util.*;
 public class Armstrong_num {
     public static boolean Is_Armstrong_Number(int n) {
         int num = n;
+        int pow = CountOfDigit(n); 
         int sum = 0;
         while(n > 0) {
             int rem = n % 10;
